@@ -3,7 +3,7 @@ import requests
 import streamlit as st
 
 # --- Configuration ---
-FASTAPI_BASE_URL = "http://localhost:8000"  # or your server URL
+FASTAPI_BASE_URL = "https://course-recommender-apis-surendra-prep.azurewebsites.net/"  # or your server URL
 
 #Call FastAPI endpoint and return a DataFrame.
 def fetch_data(service_url: str, params: dict, method: str = "get") -> pd.DataFrame:
